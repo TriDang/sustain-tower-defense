@@ -25,7 +25,7 @@ macOS does not come with a package manager by default. Homebrew is essential for
 1. Open **Terminal**.
 2. Copy and paste the following command:
    ```bash
-   /bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 3. Note: After the installation completes, check the Terminal output for "Next steps". You will need to run 2-3 commands provided there to add Homebrew to your PATH.
 
