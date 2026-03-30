@@ -30,7 +30,13 @@ macOS does not come with a package manager by default. Homebrew is essential for
 3. Note: After the installation completes, check the Terminal output for "Next steps". You will need to run 2-3 commands provided there to add Homebrew to your PATH.
 
 ### Step 1: Install Python
+Execute the following command in Termimal to install Python
+```bash
 brew install python
+```
 
 ### Step 2: Install Pygame
+Execute the following command in Termimal to install Pygame
+```bash
 pip3 install pygame
+```
