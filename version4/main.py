@@ -1,4 +1,5 @@
 import pygame
+import os
 
 from enemy import Heatwave, PlasticWave
 from tower import SolarPanel, RecyclingPlant, MangroveForest
@@ -40,20 +41,20 @@ path = [(50, 300), (250, 300), (250, 150), (550, 150), (550, 450), (750, 450)]
 TARGET_POS = path[-1]
 
 # ---- Load images ----
-HEATWAVE_IMG = pygame.image.load("version4/assets/heatwave.png").convert_alpha()
-PLASTICWAVE_IMG = pygame.image.load("version4/assets/plastic_wave.png").convert_alpha()
+HEATWAVE_IMG = pygame.image.load(os.path.join("version4", "assets", "heatwave.png")).convert_alpha()
+PLASTICWAVE_IMG = pygame.image.load(os.path.join("version4", "assets", "plastic_wave.png")).convert_alpha()
 
-SOLAR_IMG = pygame.image.load("version4/assets/solar_panel.png").convert_alpha()
-RECYCLE_IMG = pygame.image.load("version4/assets/recycling_plant.png").convert_alpha()
-MANGROVE_IMG = pygame.image.load("version4/assets/mangrove_forest.png").convert_alpha()
+SOLAR_IMG = pygame.image.load(os.path.join("version4", "assets", "solar_panel.png")).convert_alpha()
+RECYCLE_IMG = pygame.image.load(os.path.join("version4", "assets", "recycling_plant.png")).convert_alpha()
+MANGROVE_IMG = pygame.image.load(os.path.join("version4", "assets", "mangrove_forest.png")).convert_alpha()
 
-EARTH_IMG = pygame.image.load("version4/assets/earth.png").convert_alpha()
+EARTH_IMG = pygame.image.load(os.path.join("version4", "assets", "earth.png")).convert_alpha()
 
 # ---- Load sounds ----
-sfx_attack = pygame.mixer.Sound("version4/assets/sfx_attack.wav")
-sfx_destroy = pygame.mixer.Sound("version4/assets/sfx_destroy.wav")
-sfx_win = pygame.mixer.Sound("version4/assets/sfx_win.wav")
-sfx_lose = pygame.mixer.Sound("version4/assets/sfx_lose.wav")
+sfx_attack = pygame.mixer.Sound(os.path.join("version4", "assets", "sfx_attack.wav"))
+sfx_destroy = pygame.mixer.Sound(os.path.join("version4", "assets", "sfx_destroy.wav"))
+sfx_win = pygame.mixer.Sound(os.path.join("version4", "assets", "sfx_win.wav"))
+sfx_lose = pygame.mixer.Sound(os.path.join("version4", "assets", "sfx_lose.wav"))
 
 # ---- Groups ----
 enemies = pygame.sprite.Group()

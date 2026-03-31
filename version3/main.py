@@ -1,4 +1,5 @@
 import pygame
+import os
 
 WIDTH, HEIGHT = 800, 600
 FPS = 60
@@ -35,7 +36,7 @@ health_font = pygame.font.SysFont("Arial, Helvetica", 22)
 path = [(50, 300), (250, 300), (250, 150), (550, 150), (550, 450), (750, 450)]
 
 # Tower image
-SOLAR_IMG = pygame.image.load("version3/assets/solar_panel.png").convert_alpha()
+SOLAR_IMG = pygame.image.load(os.path.join("version3", "assets", "solar_panel.png")).convert_alpha()
 
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, path, w, h, color=(200, 50, 50), speed=2, health=60):
